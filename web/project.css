@@ -1,13 +1,24 @@
+.wrapper{
+     display:grid;
+    grid-template-rows:50px;
+}
 body{
     margin:0px;
 }
-.header {
-  height:35px;    
+img{
+    border:none;
+}
+a{
+    text-decoration:none;
+}
+.wrapper .header {
+  height:35px;
   width: 100%;
   background-color: black;
   overflow: hidden;
   padding-top:7px;
   padding-bottom:10px;
+  
 }
 .header a{
   color: #ffcc66;
@@ -23,43 +34,114 @@ body{
     float:right;
     color:#ffcc66;
     font-size:15px;
-    text-align: center;
-    padding-right:70px;
-    padding-bottom:25px;
-}
-.logo img{
-    padding-left:600px;
-    height:100px;
+    padding-right:80px;
+    padding-bottom:30px;
+    line-height: 0px;
+ }
+.wrapper .logo img{
+    padding-left :600px;
+    height:80px;
     width:140px;
-    
-}
-#crossfade{
+    border:none;
+ }
+.wrapper .navigational{
+    font-family:sans-serif;
+    font-size:15px;
+    color: black;
     position:relative;
 }
-#crossfade img{
+ul.menu{
+    float:none;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+ul.submenu {
+    float:none;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+ul.menu li{
+    width:160px;
+    background-color: white;
+    line-height:40px;
+    text-align:center;
+    font-size:15px;
+    
+}
+
+ul.menu > li{
+    float:left;
+        
+    width:160px;
+    background-color: white;
+    line-height:40px;
+    text-align:center;
+    font-size:15px;
+    
+}
+ul.menu li a{
+    text-decoration:none;
+    display:block;
+    color:black;
+}
+ul.submenu li a:hover{
+    background-color: black;
+    color:white;
+    overflow:visible;
+}
+ul.menu li ul li{
+    display:none;
+}
+ul.menu li:hover ul li{
+    display:block;
+    border-top:0.25px solid black;
+    border-left:0.25px whitesmoke ;
+    border-right:0.25px whitesmoke;
+    z-index: 20;
+    
+}
+
+ul.menu li ul {
     position:absolute;
-    transition:1s all;
+    z-index: 20;
+}
+.signin{
+    font-size: 15px;
+    float:right;
+    margin-right:50px;
+}
+.wrapper .imgbox{
+    position:relative;
+    /*margin-top:80px;*/
+   
+}
+.imgbox img{
+   position:absolute;
     height:300px;
     width:100%;
     border-top:1px solid black;
-    
+    padding-bottom:15px;
+    border-bottom:3px solid black;
 }
-#crossfade img.bottom {
-animation-name: FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 5s;
-animation-direction: alternate;
+.bottom {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
-@keyframes FadeInOut {
+@keyframes fade {
   0% {
   opacity:1;
 }
-45% {
-opacity:1;
+25%{
+   opacity:1 ;
 }
-55% {
-opacity:0;
+75%{
+    opacity:0;
 }
 100% {
 opacity:0;
@@ -69,7 +151,7 @@ opacity:0;
     height:100px;
     width:1000px;
     background:rgba(255,255,255,0.7);
-    position:fixed;
+    position:absolute;
     text-align:center;
     margin-top:100px;
     margin-left:100px;
@@ -88,6 +170,7 @@ opacity:0;
     float:left;
     
 }
+
 .textbox input{
     background:rgba(255,255,255,1);
     font-size:15px;
@@ -101,3 +184,194 @@ opacity:0;
     float:left;
 }
 
+.wrapper .transaction{
+    float:left;
+    display:inline-block;
+    width:auto;
+    font-size:15px;
+    font-family: Times new roman; 
+    margin-top:370px;
+    margin-left:40px;
+}
+pre {
+    font-family: "Times New Roman";
+    
+}
+.buy img{
+    height:150px;
+    width:150px;
+    text-align:center;
+    padding-left:50px;
+    border:none;
+    
+}
+.buy{
+    float:left;
+    padding-right:30px;
+    text-decoration:none;
+    padding-left:50px;
+}
+.by{
+    padding-left:50px;
+    text-decoration:none;
+    font-size:15px;
+}
+.sell img{
+    height:150px;
+    width:150px;
+    text-align:center;
+    padding-left: 50px;
+    border:none;
+}
+.sell{
+    float:left;
+    padding-left:50px;
+    text-decoration:none;
+}
+.sel{
+    padding-left:60px;
+    text-decoration:none;
+    font-size:15px;
+}
+.contact img{
+    height:150px;
+    width:150px;
+    text-align:center;
+    padding-left: 50px;
+    border:none;
+}
+
+.contact{
+    float:left;
+    text-decoration:none;
+    padding-left:100px;
+}
+.con{
+    padding-left:100px;
+    text-decoration:none;
+    font-size:15px;
+}
+.contactimagebox{
+    height: 600px;
+    float: left;
+    width: 24%;
+    display: inline-block;
+    border: 1px solid black;
+    margin-left:20px;
+}
+
+
+.mob-env{
+    margin-left:40px;
+    font-size:15px;
+    margin-top:10px;
+    padding-left:35px;
+    
+}
+.name{
+    font-size:25px;
+    margin-left:25px;
+    margin-top: 10px;
+}
+.qualification{
+    font-size:15px;
+    margin-left:25px;
+    margin-top:8px;
+}
+.number{
+   font-size:15px;
+   margin-left:25px; 
+   margin-top:9px;
+}
+.contactmary .fa{
+    padding-left:25px;
+}
+.icon{
+    margin-top:36px;
+    height:24px;
+    width:100%;
+    background-color: #DCDCDC;
+    text-align:center;
+    padding-top:20px;
+    
+    
+}
+.info{
+    float: left;
+    width: 65%;
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration:none;
+}
+.form{
+    height:180px;
+    width:1200px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    margin-left:40px;
+}
+.loc{
+    height: 40px;
+    width:200px;
+    background-color:black;
+    text-align:center;
+    color:white;
+    margin:20px 20px 20px 40px;
+    
+}
+.city{
+    height:35px;
+    width: 500px;
+    background-color:white;
+    margin:20px 20px 20px 20px;
+    text-align:center;
+}
+.search{
+    height:40px;
+    width:200px;
+    background-color:black;
+    text-align:center;
+    color:white;
+    margin:20px 20px 20px 20px;
+    
+}
+select{
+    height:40px;
+    width:200px;
+    text-align:center;
+    margin-left:40px;
+    margin-right:20px;
+    float:left;
+}
+.slider{
+    height: 40px;
+    width: 200px;
+    float: left;
+    
+}
+/*It is the footer styling*/
+
+
+.footerwrapper{
+    
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-color:black;
+    font-size: 15px;
+    color:white;
+    margin-top:20px;
+    
+}
+.div1{
+    margin-left:30px;
+}
+.map{
+    height:20px;
+}
+.list1{
+    height:20px;
+}
+
+
+
+ 
