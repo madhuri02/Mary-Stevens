@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width:50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btnsend{
+ background-color: black ;
+ color:white ;
+ width:400px;
+ height: 50px;
+
+
+
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Contact Me</h2>
+
+<div class="container" style >
+    <form action="/action_page.php">
+    
+    <input type="text"   placeholder="Name*"><br>
+    
+    <input type="text"  placeholder="Email*"><br>
+    
+    <input type="text"  placeholder="Phone Number"><br>
+   
+   
+   <textarea rows="4" cols="50" placeholder="Comments? Question?*"></textarea>
+
+ 
+    <br>
+
+   
+<input type="button" value="SEND" class="btnsend"> 
+
+</form>
+</div>
+
+</body>
+</html>
