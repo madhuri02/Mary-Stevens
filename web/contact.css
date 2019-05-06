@@ -1,0 +1,53 @@
+
+.imagebox{
+    height: 590px;
+    float: left;
+    width: 24.5%;
+    display: inline-block;
+    border: 1px solid black;
+}
+img{
+    border-bottom:2px black solid;
+}
+.mob-env{
+    margin-left:25px;
+    font-size:15px;
+    margin-top:10px;
+    
+}
+.name{
+    font-size:25px;
+    margin-left:25px;
+    margin-top: 10px;
+}
+.qualification{
+    font-size:15px;
+    margin-left:25px;
+    margin-top:8px;
+}
+.number{
+   font-size:15px;
+   margin-left:25px; 
+   margin-top:9px;
+}
+.icon{
+    margin-top:23px;
+    height:30px;
+    width:100%;
+    background-color: #DCDCDC;
+    text-align:center;
+    
+}
+
+.info{
+    float: left;
+    width: 70%;
+    display: inline-block;
+    margin-left: 46px;
+    text-decoration:none;
+}
+
+
+
+                  
+                  
