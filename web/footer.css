@@ -1,0 +1,20 @@
+.footerwrapper{
+    
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-color:black;
+    font-size: 15px;
+    color:white;
+    margin-top:20px;
+    
+}
+.div1{
+    margin-left:30px;
+}
+.map{
+    height:20px;
+}
+.list1{
+    height:20px;
+}
+
