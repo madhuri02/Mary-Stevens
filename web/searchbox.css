@@ -1,0 +1,46 @@
+.form{
+    height:200px;
+    width:1200px;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+.loc{
+    height: 40px;
+    width:200px;
+    background-color:black;
+    text-align:center;
+    color:white;
+    margin:40px 20px 30px 40px;
+    
+}
+.city{
+    height:35px;
+    width: 500px;
+    background-color:white;
+    margin:40px 20px 30px 20px;
+    text-align:center;
+}
+.search{
+    height:40px;
+    width:200px;
+    background-color:black;
+    text-align:center;
+    color:white;
+    margin:40px 20px 30px 20px;
+}
+select{
+    height:40px;
+    width:200px;
+    text-align:center;
+    margin-left:40px;
+    margin-right:20px;
+    float:left;
+}
+.slider{
+    height: 40px;
+    width: 200px;
+    float: left;
+    
+}
+
+
