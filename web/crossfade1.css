@@ -1,0 +1,67 @@
+.imgbox{
+    position:relative;
+}
+.imgbox img{
+   position:absolute;
+    height:350px;
+    width:100%;
+    border-top:1px solid black;
+    padding-bottom:15px;
+    border-bottom:3px solid black;
+}
+.bottom {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+@keyframes fade {
+  0% {
+  opacity:1;
+}
+25%{
+   opacity:1 ;
+}
+75%{
+    opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+.textbox{
+    height:100px;
+    width:1000px;
+    background:rgba(255,255,255,0.7);
+    position:fixed;
+    text-align:center;
+    margin-top:100px;
+    margin-left:100px;
+    border-top:1px solid black;
+}
+.textbox button{
+    background:rgba(0,0,0,1);
+    font-size: 15px;
+    height:35px;
+    width:200px;
+    color:white;
+    margin-top:30px;
+}
+.textbox btn1{
+    padding-left: 25px;
+    float:left;
+    
+}
+.textbox input{
+    background:rgba(255,255,255,1);
+    font-size:15px;
+    height:30px;
+    width:400px;
+    padding-left:50px;
+    
+}
+.textbox btn2{
+    padding-left:50px;
+    float:left;
+}
