@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link href="searchbox.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var outputSpan = $('#spanOutput');
+                var sliderDiv = $('#slider');
+                $('#slider').slider({
+                    range:true,
+                    min : 0,
+                    max :10000000,
+                    
+                    slide: function(event,ui){
+                        outputSpan.html(ui.values[0]+' - '+ui.values[1]);
+                    }
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+         <h2>Search Properties</h2>
+    <div class="form">
+        <button class="loc">FIND MY LOCATION</button>
+        <input type="text" class="city" value="Type to search by city">
+        <button class="search">SEARCH</button>
+    <div class ="rooms">
+    <select name="bedrooms">
+              <option value="Bedrooms 0+">Bedrooms 0+</option>
+              <option value="Bedrooms 1+">Bedrooms 1+</option>
+              <option value="Bedrooms 2+">Bedrooms 2+</option>
+              <option value="Bedrooms 3+">Bedrooms 3+</option>
+              <option value="Bedrooms 4+">Bedrooms 4+</option>
+              <option value="Bedrooms 5+">Bedrooms 5+</option>    
+    </select>
+    
+      
+    <select name="bathrooms">
+              <option value="Bathrooms 0+">Bathrooms 0+</option>
+              <option value="Bathrooms 1+">Bathrooms 1+</option>
+              <option value="Bathrooms 2+">Bathrooms 2+</option>
+              <option value="Bathrooms 3+">Bathrooms 3+</option>
+              <option value="Bathrooms 4+">Bathrooms 4+</option>
+              <option value="Bathrooms 5+">Bathrooms 5+</option>    
+            </select>
+    <div class="image slider">
+        Price: <span id="spanOutput"></span>
+        <br /><br />
+        <div id="slider"></div>
+    </div>    
+    </div>    
+    </div>
+    </body>
+</html>
