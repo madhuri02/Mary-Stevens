@@ -1,0 +1,55 @@
+.transaction{
+    float:left;
+    display:inline-block;
+    width:auto;
+    font-size:13px;
+    font-family: sans-serif;
+    margin-top:600px;
+}
+.buy img{
+    height:150px;
+    width:150px;
+    text-align:center;
+    
+}
+.buy{
+    float:left;
+    padding-right:20px;
+    text-decoration:none;
+}
+.by{
+    padding-left:20px;
+    text-decoration:none;
+    font-size:13px;
+}
+.sell img{
+    height:150px;
+    width:150px;
+    text-align:center;
+    padding-left: 50px;
+}
+.sell{
+    float:left;
+    padding-right:20px;
+    text-decoration:none;
+}
+.sel{
+    padding-left:60px;
+    text-decoration:none;
+    font-size:13px;
+}
+.contact img{
+    height:150px;
+    width:150px;
+    text-align:center;
+    padding-left: 50px;
+}
+.contact{
+    float:left;
+    text-decoration:none;
+}
+.con{
+    padding-left:100px;
+    text-decoration:none;
+    font-size:13px;
+}
