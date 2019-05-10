@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>service-Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+         
+        <style>
+            .services-contact-wrapper{
+                display:grid;
+                grid-template-rows:repeat(autofit,minmax(150px,1fr));
+            }
+            
+            .content{
+                display:flex;
+                padding-top:10px;
+                border-top:2px black solid;
+            }
+            .content > div{
+                margin:auto;
+            }
+            .mary-contact{
+                float:right;
+            }
+            
+            .mary-imgbox{
+                height:150px;
+                width:150px;
+                border:1px black solid;
+            }
+            .mary-imgbox > img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+        </style>
+         
+           
+    </head>
+    <body>
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
+        <div class="services-contact-wrapper">
+            <div w3-include-html="header.html"></div> 
+            <div w3-include-html="navigation.html" class="contact-nav"></div> 
+            
+            <div class="content">
+                <div class="test">
+                     <h1> Contact me</h1>
+                     <div class="mary-imgbox">
+                         <img src="Images/Mary Stevens.jpg">
+                     </div>
+                     <div>
+                        <h2>Mary Stevens,CDPE</h2>
+                        <h2>mstevens21@aol.com</h2>
+                        <h2>(847)910-4890</h2>
+                        <h4>Century 21 ABC Schiro group</h4>
+                        <h4>1732 W.Wise Road</h4>
+                        <h4>Schaumburg,IL,60193</h4>
+                        <h4>475.135695</h4>
+                     </div>
+                </div>
+                <div class="mary-contact" w3-include-html="contact_mary_form.html"></div> 
+            </div>
+                <div w3-include-html="searchbox.html"></div> 
+                <div w3-include-html="footer.html"></div> 
+                <div w3-include-html="subfooter.html"></div> 
+            <script>
+                w3.includeHTML();
+            </script>
+        </div>
+    </body>
+</html>
